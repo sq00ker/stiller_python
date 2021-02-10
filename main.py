@@ -1,5 +1,5 @@
 # version 1.0 
-# 
+# by sq00ker
 # импорт необходимых модулей 
 from ip2geotools.databases.noncommercial import DbIpCity
 from PIL import ImageGrab
